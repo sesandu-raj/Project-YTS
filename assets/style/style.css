@@ -1,0 +1,65 @@
+* {
+  margin: 0px;
+  padding: 0;
+}
+
+.main_wrapper {
+  background: #1d1d1d;
+  color: #919191;
+  font-family: "Arial";
+}
+
+.main_wrapper .center_wrapper {
+  width: 90%;
+  /* margin: 0 0 0 0; top right bottom left*/
+  /* margin: 0 20px; This sets the top and bottom margins to 0 and the left and right margins to 20px */
+  margin: 0 auto; /* This centers the element horizontally within its parent container */
+  display: flex;
+  padding: 5px 0;
+}
+
+.main_wrapper .center_wrapper .left_wrapper .tagline {
+  padding-left: 15px;
+}
+
+/*.main_wrapper .center_wrapper .left_wrapper,
+.main_wrapper .center_wrapper .right_wrapper {
+  display: flex;
+  align-items: center;  Vertically centers the items within the flex container 
+} */
+.main_wrapper .center_wrapper .left_wrapper {
+  display: flex;
+  align-items: center;
+  width: 40%;
+}
+
+.main_wrapper .center_wrapper .right_wrapper {
+  display: flex;
+  align-items: center;
+  width: 60%;
+  justify-content: flex-end; /* Aligns items to the right */
+}
+
+.main_wrapper .center_wrapper .right_wrapper input {
+  border-radius: 20px;
+  background-color: transparent; /* Makes the background transparent */
+  border: 2px solid #333;
+  font-size: 12px;
+  font-weight: bold;
+
+  padding: 5px;
+  outline: none;
+  color: #919191;
+  /*text-align: center; Centers the placeholder and input text */
+}
+
+.main_wrapper .center_wrapper .right_wrapper .manu_wrapper ul {
+  list-style: none; /* Removes default bullet points from the list */
+  display: flex;
+}
+.main_wrapper .center_wrapper .right_wrapper .manu_wrapper ul li a {
+  text-decoration: none; /* Removes underline from links */
+  color: #919191;
+  padding: 0 10px;
+  font-size: 12px;
+}
