@@ -1,12 +1,12 @@
 * {
   margin: 0px;
   padding: 0;
+  font-family: Arimo, Arial, Helvetica, "Lucida Grande", sans-serif;
 }
 
 .main_wrapper {
   background: #1d1d1d;
   color: #919191;
-  font-family: "Arial";
   height: 60px;
   align-items: center;
 }
@@ -22,6 +22,9 @@
 
 .main_wrapper .center_wrapper .left_wrapper .tagline {
   padding-left: 15px;
+  font-size: 1.2em;
+  margin-left: 2%;
+  margin-top: 7px;
 }
 
 /*.main_wrapper .center_wrapper .left_wrapper,
@@ -111,4 +114,94 @@
 
 .main_wrapper .center_wrapper .right_wrapper .manu_wrapper ul li:last-child a {
   border-left: 1px solid #fff;
+}
+
+/*Header wrapper*/
+.mainbodywrapper {
+  background: #333;
+  background-image: url("/assets/images/background.jpg");
+  background-size: cover;
+  position: relative;
+  height: 93.99vh;
+}
+.mainbodywrapper:after {
+  content: "";
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background: linear-gradient(
+    to bottom,
+    rgba(29, 29, 29, 0.65) 0,
+    rgba(29, 29, 29, 1) 100%
+  );
+  z-index: 1;
+}
+.mainbodywrapper .headerwrapper .centerbodywrapper {
+  width: 90%;
+  margin: 0 auto; /* Top and bottom margin 0, left and right auto to center */
+  text-align: center;
+  padding: 30px 0;
+  position: relative;
+  color: #fff;
+  z-index: 2;
+  border-bottom: 1px solid #333;
+}
+.mainbodywrapper .headerwrapper .centerbodywrapper h1 {
+  font-size: 2.75em;
+  font-weight: 700;
+  text-shadow: 0 2px 2px rgba(0, 0, 0, 0.4);
+  margin-bottom: 25px;
+  margin-top: 0px;
+  color: #fff;
+}
+
+.mainbodywrapper .headerwrapper .centerbodywrapper p {
+  width: 47%;
+  margin: 0 auto 25px; /* Top margin 0, bottom margin 25px, left and right auto to center */
+  font-size: 0.96rem;
+  color: #ccc;
+}
+
+.mainbodywrapper .headerwrapper .centerbodywrapper a {
+  text-decoration: none;
+  color: #428bca;
+  font-weight: 700;
+  font-size: 0.95rem;
+  display: block; /* Makes the link take up the full width */
+  margin-bottom: 10px;
+}
+
+.mainbodywrapper .headerwrapper .centerbodywrapper .bottombar {
+  padding: 20px 0 0 0;
+  position: relative;
+}
+
+.mainbodywrapper .headerwrapper .centerbodywrapper .bottombar .centeritem {
+  display: flex;
+  align-items: center; /* Vertically centers the items within the flex container */
+  justify-content: center; /* Centers items horizontally */
+}
+.mainbodywrapper .headerwrapper .centerbodywrapper .bottombar .centeritem svg {
+  fill: #6ac045;
+  width: 17px;
+  height: 17px;
+}
+.mainbodywrapper .headerwrapper .centerbodywrapper .bottombar .centeritem span {
+  padding-left: 5px;
+}
+
+.mainbodywrapper .headerwrapper .centerbodywrapper .bottombar .rightfeed {
+  text-decoration: none;
+  display: flex;
+  align-items: center; /* Vertically centers the items within the flex container */
+  position: absolute; /* Centers items horizontally */
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.mainbodywrapper .headerwrapper .centerbodywrapper .bottombar .rightfeed span {
+  padding-left: 7px;
 }
