@@ -7,6 +7,8 @@
   background: #1d1d1d;
   color: #919191;
   font-family: "Arial";
+  height: 60px;
+  align-items: center;
 }
 
 .main_wrapper .center_wrapper {
@@ -40,17 +42,34 @@
   justify-content: flex-end; /* Aligns items to the right */
 }
 
-.main_wrapper .center_wrapper .right_wrapper input {
+.main_wrapper .center_wrapper .right_wrapper .wrapper_input {
   border-radius: 20px;
   background-color: transparent; /* Makes the background transparent */
   border: 2px solid #333;
-  font-size: 12px;
-  font-weight: bold;
 
-  padding: 5px;
+  font-weight: bold;
+  display: flex;
+
+  padding: 0 10px;
   outline: none;
   color: #919191;
   /*text-align: center; Centers the placeholder and input text */
+}
+
+.main_wrapper .center_wrapper .right_wrapper .wrapper_input svg {
+  width: 12px;
+  height: 12px;
+  fill: #919191;
+  padding: 8px;
+}
+
+.main_wrapper .center_wrapper .right_wrapper .wrapper_input input {
+  background: transparent;
+  border: none; /* Removes the default border of the input field */
+  outline: none; /* Removes the default outline when the input field is focused */
+  color: #919191;
+  font-size: 12px;
+  font-size: 14px;
 }
 
 .main_wrapper .center_wrapper .right_wrapper .manu_wrapper ul {
@@ -61,5 +80,35 @@
   text-decoration: none; /* Removes underline from links */
   color: #919191;
   padding: 0 10px;
-  font-size: 12px;
+  font-size: 14px;
+  transition: all 0.3s ease-in-out;
+}
+
+.main_wrapper .center_wrapper .right_wrapper .manu_wrapper ul li a:hover {
+  color: #fff;
+}
+.main_wrapper
+  .center_wrapper
+  .right_wrapper
+  .manu_wrapper
+  ul
+  li:nth-child(2)
+  a {
+  font-weight: bold;
+  color: #6ac045;
+}
+
+.main_wrapper .center_wrapper .right_wrapper .manu_wrapper ul li:last-child a,
+.main_wrapper
+  .center_wrapper
+  .right_wrapper
+  .manu_wrapper
+  ul
+  li:nth-last-child(2)
+  a {
+  color: #fff;
+}
+
+.main_wrapper .center_wrapper .right_wrapper .manu_wrapper ul li:last-child a {
+  border-left: 1px solid #fff;
 }
